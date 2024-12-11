@@ -1,0 +1,26 @@
+import { Button, TextField } from '@mui/material';
+
+<TextField
+    label="Solution"
+    multiline
+    rows={4}
+    variant="outlined"
+    fullWidth
+/>
+<Button variant="contained" color="primary" onClick={handleSubmit}>
+    Submit Solution
+</Button>
+                                                     button {
+                                                       padding: 10px 20px;
+                                                       margin: 10px;
+                                                       font-size: 16px;
+                                                       cursor: pointer;
+                                                       background-color: #4CAF50;
+                                                       color: white;
+                                                       border: none;
+                                                       border-radius: 4px;
+                                                     }
+
+                                                     button:hover {
+                                                       background-color: #45a049;
+                                                     }

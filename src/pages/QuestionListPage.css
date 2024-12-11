@@ -1,0 +1,125 @@
+/* Container for the whole page */
+.question-list-container {
+    font-family: 'Arial', sans-serif;
+    padding: 5px;
+    min-height: 25vh;
+    position: center;
+}
+
+/* Title of the page */
+.question-list-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* List of questions */
+.question-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+
+}
+
+/* Styling for each question item */
+.question-list-item {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+    position: center;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.question-list-item:hover {
+    background-color: #e9f7fc;
+}
+
+/* Styling for the question title link */
+.question-title {
+    font-weight: bold;
+}
+
+.question-link {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.question-link:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the dropdown */
+.dropdown-container {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.dropdown {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Related Questions section */
+.related-questions-container {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.related-questions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.related-question-item {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Back button styling */
+/* Back button styling with Home Icon */
+.back-button {
+    display: absolute;
+    margin: 20px auto;
+    padding: 7px 12px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    width: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-button i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.back-button:hover {
+    background-color: #218838;
+}
+
+
+.back-button:hover {
+    background-color: #218838;
+}
+/* Dark mode toggle button */

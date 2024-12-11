@@ -1,0 +1,82 @@
+/* Question Page Styles */
+.question-page-container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.question-page-back-button {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.question-page-back-button:hover {
+    background-color: #c82333;
+}
+
+.question-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.question-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.question-page-textarea {
+    width: 100%;
+    height: 100px;
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.question-page-submit-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.question-page-submit-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.question-page-submit-button:hover {
+    background-color: #218838;
+}
+
+.points-display{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    
+  
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
