@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './HomePage.css'; // Import the CSS
+import { usePoints } from './PointsContext';
 
 const questions = [
     { id: 1, title: 'Calculate the Thevenin Equivalent' },
@@ -10,6 +11,9 @@ const questions = [
 
 const HomePage = () => {
     const navigate = useNavigate();
+    const { points, addPoints, deductPoints } = usePoints();
+
+
     const [isDarkMode, setIsDarkMode] = useState(false);
 
     // Handler to navigate to the questions page
@@ -44,7 +48,7 @@ const HomePage = () => {
                     Start Solving Questions
                 </button>
 
-              
+                 <p className="points-display-1">Your Points: {points}</p>
             </div>
 
           

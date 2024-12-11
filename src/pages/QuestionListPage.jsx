@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './QuestionListPage.css'; // Import the styles
+import { usePoints } from './PointsContext';
 
 // Questions with related sub-questions
 const questions = [
@@ -31,6 +32,7 @@ const questions = [
 ];
 
 const QuestionListPage = () => {
+    const { points, addPoints, deductPoints } = usePoints();
     const navigate = useNavigate();
     const [selectedQuestion, setSelectedQuestion] = useState(null);
 
@@ -78,6 +80,7 @@ const QuestionListPage = () => {
                 <i className="fas fa-home"></i> {/* Home Icon */}
                
             </button>
+             <p className="points-display">Your Points: {points}</p>
         </div>
     );
 };
