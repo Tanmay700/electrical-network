@@ -17,6 +17,15 @@ const QuestionPage = () => {
         return <p>Question not found. Please check the question ID.</p>;
     }
 
+    const questionImages = {
+        '1-1': './question/1',
+        '1-2': 'https://res.cloudinary.com/demo/image/upload/v1612345678/thevenin_complex.jpg',
+        '2-1': 'https://res.cloudinary.com/demo/image/upload/v1612345678/node_voltage_resistive.jpg',
+        '2-2': 'https://res.cloudinary.com/demo/image/upload/v1612345678/node_voltage_rlc.jpg',
+        '3-1': 'https://res.cloudinary.com/demo/image/upload/v1612345678/power_dc.jpg',
+        '3-2': 'https://res.cloudinary.com/demo/image/upload/v1612345678/power_ac.jpg',
+    };
+
     const handleSubmit = () => {
         if (solution.trim() === question.answer) {
             alert('Correct Answer! You earned 4 points.');
@@ -37,11 +46,25 @@ const QuestionPage = () => {
             <button className="question-page-back-button" onClick={goBackToList}>
                 Back to Questions
             </button>
+
             <div className="question-content">
                 <h1 className="question-title">{question.title}</h1>
                 <p className="question-description">{question.description}</p>
+                
                 <p className="points-display">Your Points: {points}</p>
             </div>
+            {question.image ? (
+                <img
+                    src={question.image}
+                    alt={`Question ${id}`}
+                    className="question-image"
+                    
+                />
+
+            ) : (
+                <p className="image-placeholder">Image not available</p>
+            )}
+
             <textarea
                 className="question-page-textarea"
                 value={solution}

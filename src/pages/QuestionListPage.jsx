@@ -38,7 +38,7 @@ const QuestionListPage = () => {
 
     // Function to navigate back to the home page
     const goBack = () => {
-        navigate('/');
+        navigate('/home');
     };
 
     // Handle click on a main question to show sub-questions
@@ -76,7 +76,7 @@ const QuestionListPage = () => {
             </ul>
 
             {/* Back button */}
-            <button className="back-button" onClick={goBack}>
+            <button className="back-button-1" onClick={goBack}>
                 <i className="fas fa-home"></i> {/* Home Icon */}
                
             </button>

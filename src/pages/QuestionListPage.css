@@ -30,7 +30,7 @@
     margin-bottom: 5px;
     background-color: #fff;
     border: 1px solid #ddd;
-    padding: 5px;
+    padding: 10px;
     position: center;
     border-radius: 8px;
     transition: background-color 0.3s;
@@ -89,7 +89,7 @@
 
 /* Back button styling */
 /* Back button styling with Home Icon */
-.back-button {
+.back-button-1 {
     display: absolute;
     margin: 20px auto;
     padding: 7px 12px;
@@ -114,7 +114,7 @@
     margin-right: 8px; /* Space between icon and text */
 }
 
-.back-button:hover {
+.back-button-1:hover {
     background-color: #218838;
 }
 

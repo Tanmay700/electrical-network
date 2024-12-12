@@ -80,3 +80,38 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+.back-button-1{
+    display: absolute;
+    margin: 20px auto;
+    padding: 7px 12px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    width: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.question-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.question-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
